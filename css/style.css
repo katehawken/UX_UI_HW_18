@@ -41,6 +41,14 @@ ul, p{
   size: 20px;
 }
 
+/* Media Query */
+@media only screen and (max-width: 600px){
+  #logo {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .topnav-div {
   display: inline-flex;
   align-items: center;
@@ -80,6 +88,12 @@ color: #FFFFFF;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+/* Media Query */
+@media only screen and (max-width: 600px){
+  .topnav-centered {
+    margin: 80px auto 0 auto;
+  }
+}
 
 ul {
 list-style: none;
@@ -156,12 +170,13 @@ width:50%;
 /* Media Query */
 @media only screen and (max-width: 600px){
   .herosection {
-    flex-direction: column;
-    width: 100vw;
-    justify-content: center;
+    /* flex-direction: column; */
+    /* width: 100vw; */
+    /* justify-content: center; */
     text-align: center;
-    align-items: center;
-    padding: 80px 0px 80px 10px;
+    /* align-items: center; */
+    padding: 10px 0px 10px 10px;
+    margin: 0;
   }
 }
 
@@ -222,7 +237,7 @@ color:#7097A8;
 @media only screen and (max-width: 600px){
   .flexContainer {
     flex-direction: column;
-    width: 100vw;
+    width: none;
     text-align: center;
     justify-content: center;
   }
@@ -255,7 +270,7 @@ color:#7097A8;
   .uxskills div {
     padding: 50px 10px 50px 10px;
     margin: 1 10%;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -263,12 +278,13 @@ color:#7097A8;
   .uxskills {
     padding: 0;
     margin-left: 0;
+    margin: 0;
   }
 }
 
 @media only screen and (max-width: 600px){
   .uxskills p {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -285,7 +301,7 @@ margin: 0, 12.5%;
   justify-content: left;
   align-items: left;
   margin: 0 12.5%;
-  margin-left: 200px;
+  margin-left: 300px;
 }
 
 @media only screen and (max-width: 600px){
@@ -295,7 +311,7 @@ margin: 0, 12.5%;
   }
 }
 
-.button2 {
+#connectButton {
   border: none;
   color: white;
   background-color: #E6CDB5;
@@ -305,14 +321,24 @@ margin: 0, 12.5%;
   font-size: 16px;
   margin: 8px 2px;
   cursor: pointer;
+  position: relative;
+  bottom: 200px;
+  right: -1000px;
 }
 
+#connectButton:hover {
+  background-color: #d7af89;
+  color: white;
+  }
+  
+
 @media only screen and (max-width: 600px){
-  .button2 {
+  #connectButton {
     flex-direction: column;
-    width: 100vw;
     text-align: center;
     justify-content: center;
+    bottom: 0px;
+    right: -60px;
   }
 }
 
